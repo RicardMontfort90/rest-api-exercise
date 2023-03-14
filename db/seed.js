@@ -1,6 +1,8 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
+const Show = require('../models/Show');
+
 
 // Import data to seed
 
