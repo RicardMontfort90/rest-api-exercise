@@ -4,16 +4,19 @@ const { Schema } = mongoose;
 const showSchema = new Schema ({
     title: {
         type: String,
-        required: [true, 'Show needs to have a title']
+        required: [true, 'Need a title']
     },
     creator: {
         type: String,
+        required: [true, "Who created?"]
     },
     launched: {
-        type: Number
+        type: Number,
+        required: [true, "When was Make it?"]
     },
     genre: {
-        type: String
+        type: String,
+        required: [true, "the Gender is"]
     },
     image: {
         type: String,
