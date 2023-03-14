@@ -30,5 +30,5 @@ const showSchema = new Schema ({
     timestamps: true
 });
 
-const Show = mongoose.model("Show", showShcema);
+const Show = mongoose.model("Show", showSchema);
 module.export = Show;
