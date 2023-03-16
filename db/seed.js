@@ -4,7 +4,7 @@ mongoose.set('strictQuery', true);
 const Show = require('../models/Show');
 
 
-shows = [
+data = [
   {
     title: "The Simpsons",
     creator: "Matt Groening",
@@ -21,7 +21,7 @@ mongoose
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
   })
   .then(() => {
-    return Show.create(shows);
+    return Show.create(data);
   })
   .then((created) => {
     console.log(` You created ${created.length} shows`)
